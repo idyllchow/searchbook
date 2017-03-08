@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/article/article",
+    "pages/circle/circle",
+    "pages/mine/mine"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "color": "#dddddd",
+    "selectedColor": "#6f606d",
+    "backgroundColor": "#ffffed",
+    "list": [{
+      "pagePath": "pages/article/article",
+      "text": "文章",
+      "iconPath": "images/ic_article.png",
+      "selectedIconPath": "images/ic_article.png"
+    }, {
+     "pagePath": "pages/circle/circle",
+      "text": "圈子",
+      "iconPath": "images/ic_circle.png",
+      "selectedIconPath": "images/ic_circle.png" 
+    }, {
+      "pagePath": "pages/circle/circle",
+      "text": "我的",
+      "iconPath": "images/ic_mine.png",
+      "selectedIconPath": "images/ic_mine.png" 
+    }]
+  }
+}
