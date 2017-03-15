@@ -2,15 +2,19 @@
     border: 2rpx solid grey;
     border-radius: 30rpx;
     margin: 30rpx;
+    flex-direction: row;
 }
 
 .inputview{
   height: 100rpx;
+  width: 90%;
   margin-left: 10rpx;
 }
 
-.searchbtn{
-    margin-top: -100rpx;
-    height: 100rpx;
-    width: 100rpx;
+.searchicon{
+    height: 95rpx;
+    width: 65rpx;
+
+    margin-top: -95rpx;
+    padding: 20rpx;
 }
