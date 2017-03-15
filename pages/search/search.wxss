@@ -1,0 +1,16 @@
+.inputcontainer{
+    border: 2rpx solid grey;
+    border-radius: 30rpx;
+    margin: 30rpx;
+}
+
+.inputview{
+  height: 100rpx;
+  margin-left: 10rpx;
+}
+
+.searchbtn{
+    margin-top: -100rpx;
+    height: 100rpx;
+    width: 100rpx;
+}

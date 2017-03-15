@@ -1,8 +1,10 @@
 {
   "pages":[
+    "pages/search/search",
     "pages/article/article",
     "pages/circle/circle",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/detail/detail"
   ],
   "window":{
     "backgroundTextStyle":"light",

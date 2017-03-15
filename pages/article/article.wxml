@@ -8,18 +8,20 @@
     </swiper-item>
   </block>
 </swiper>
-<button bindtap="changeIndicatorDots"> indicator-dots </button>
+<!--<button bindtap="changeIndicatorDots"> indicator-dots </button>
 <button bindtap="changeAutoPlay"> auto </button>
-<slider bindchange="intervalChange"/>
+<slider bindchange="intervalChange"/>-->
 
-
-<view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-  </view>
+<view class="listview">
+  <block wx:for-items="{{dataContent}}" wx:for-item="item">
+    <view id="{{index}}" class="cellview" bindtap="selectedCell">
+      <image class="cellimage" mode="scaleToFill" src="{{item.image}}"/>
+      <view class="celllabel">
+      <text class="celltitle">{{item.title}}</text> 
+      <text class="celldesc">{{item.price}}  </text> 
+      <text class="celldesc">{{item.author}}  {{item.publisher}}</text> 
+      </view>
+    </view>
+  </block>
+</view>
 
