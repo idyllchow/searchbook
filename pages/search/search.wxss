@@ -3,6 +3,7 @@
     border-radius: 30rpx;
     margin: 30rpx;
     flex-direction: row;
+    display: flex;
 }
 
 .inputview{
@@ -12,9 +13,44 @@
 }
 
 .searchicon{
-    height: 95rpx;
-    width: 65rpx;
+    width: 100rpx;
+    padding-top: 25rpx;
+    padding-left: 25rpx;
+    padding-right: 5rpx;
+    padding-bottom: 25rpx;
+}
 
-    margin-top: -95rpx;
-    padding: 20rpx;
+.bookview {
+  background-color: white;
+  margin-top: 2rpx;
+  padding: 28rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.bookimage{
+  min-width: 120rpx;
+  width: 120rpx;
+  height: 120rpx;
+  margin-left: 10rpx;
+  border: 5rpx solid lightgrey;
+
+}
+
+.booklabel {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+}
+
+.booktitle{
+  font-size: 16px;
+  margin-bottom: 16rpx;
+  margin-top: 10rpx;
+}
+
+.bookdesc{
+  font-size: 11px;
+  color: grey;
+  margin-top: 5rpx;
 }

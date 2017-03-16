@@ -1,7 +1,23 @@
-<view class="inputcontainer" style="margin-top: 40%">
-  <input class="inputview" placeholder-style="color:grey" placeholder="输入查找的书名" auto-focus  />
+<view class="inputcontainer" style="margin-top: {{initTop}}" animation="{{animation}}">
+  <input class="inputview" value="{{inputValue}}" bindinput="bindKeyInput" placeholder-style="color:grey" placeholder="输入查找的书名" auto-focus  />
 
 <view class="searchicon" style="float: right" bindtap="searchBook">
 <icon type="search" > </icon> 
 </view>
+</view>
+
+<view class="listview">
+<block wx:for-items="{{books}}" wx:for-item>
+  <view id="{{index}}" class="bookview" bindtap="selectedBook">
+      <image class="bookimage" mode="scaleToFill" src="{{item.image}}"/>
+      <view class="booklabel">
+      <text class="booktitle">{{item.title}}</text> 
+      <text class="bookdesc">{{item.price}}  </text> 
+      <text class="bookdesc">{{item.author}}  {{item.publisher}}</text> 
+      </view>
+    </view>
+
+
+</block>
+
 </view>
