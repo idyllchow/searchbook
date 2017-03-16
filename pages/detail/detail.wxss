@@ -8,6 +8,7 @@
 
 .booksummary {
   display: flex;
+  height: 200rpx;
   flex-direction: row;
   margin-left: 20rpx;
 }
@@ -29,4 +30,12 @@
   font-size: 12px;
   color: red;
   margin-top: 10rpx;
+}
+
+.bookintroduce {
+  font-size: 12px;
+  color: black;
+  padding-top: 50rpx;
+  padding-left:30rpx;
+  padding-right: 30rpx;
 }

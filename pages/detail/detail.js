@@ -8,6 +8,7 @@ Page({
     publisher:"",
     price:"",
     rating:"",
+    summary: "",
     bookinfo: {}},
     
     onLoad:function(options){
@@ -33,15 +34,20 @@ Page({
   
 
       wx.request({
-        url: 'https://api.douban.com/v2/book/' + this.data.id,
+        url: 'https://api.douban.com/v2/book/' +  this.data.id,
         // data: {},
         method: 'GET',
         header: {"Content-Type": "application/json"},
         success: function(res){
           // success
           var response = res.data;
-          that.setData({bookinfo: response})
-          console.log("detail info " + response.rating)
+          
+          that.setData({
+            bookinfo: response,
+            rating: response.rating,
+            summary:response.summary
+      })
+       console.log("detail info that " + that.data.rating)
         },
         fail: function() {
           // fail
